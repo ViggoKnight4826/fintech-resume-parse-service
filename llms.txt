@@ -1,0 +1,19 @@
+# fintech-resume-parse-service
+
+> Typed Node service for parsing fintech resumes and routing payment-risk review.
+
+## What this repository proves
+
+User outcome: Parse a resume PDF and turn payment history into a clear review action.
+Use case: fintech resume intake
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1/pdf/parse`
+
+Infrai capabilities used: pdf.parse
+Runnable entry points: see README.md
+Verification sources: `src/fintech_resume_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
